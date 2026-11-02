@@ -1,0 +1,7 @@
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-30T23-46-02Z-3dba","stopReason":"chop_unconfirmed","detail":"no_log_gain_yet","steps":3,"logsGathered":0,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-30T23-48-11Z-04b3","stopReason":"open_bank_failed","detail":"bank_not_open","steps":6,"logsGathered":5,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-30T23-50-12Z-30a2","stopReason":"open_bank_failed","detail":"bank_not_open","steps":2,"logsGathered":6,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-31T00-00-25Z-19fe","stopReason":"open_bank_failed","detail":"bank_not_open","steps":2,"logsGathered":7,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-31T00-01-46Z-06eb","stopReason":"open_bank_failed","detail":"bank_not_open","steps":2,"logsGathered":16,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-31T00-04-27Z-8742","stopReason":"open_bank_failed","detail":"a dialog is open","steps":2,"logsGathered":18,"logsDeposited":0}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-10-31T18-17-38Z-0296","stopReason":"goal_met","detail":null,"steps":8,"logsGathered":5,"logsDeposited":24}

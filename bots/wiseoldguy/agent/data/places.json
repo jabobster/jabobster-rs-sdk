@@ -1,0 +1,429 @@
+{
+  "_comment": "Curated places. kind = bank|shop|dock|spot. area (optional) = town/toll note only. Bank x/z is the centre of the bank zone in rs-sdk server/content/scripts/skill_firemaking/configs/bank_zones.dbrow (plane 0). zone = [x0,z0,x1,z1]. Banks with no area are walkable from the ground.",
+  "places": {
+    "draynor-bank": {
+      "x": 3092,
+      "z": 3243,
+      "kind": "bank"
+    },
+    "varrock-west-bank": {
+      "x": 3185,
+      "z": 3436,
+      "kind": "bank"
+    },
+    "seers-bank": {
+      "x": 2724,
+      "z": 3494,
+      "kind": "bank"
+    },
+    "al-kharid-bank": {
+      "x": 3269,
+      "z": 3167,
+      "kind": "bank",
+      "area": "alkharid"
+    },
+    "draynor-fishing": {
+      "x": 3087,
+      "z": 3230,
+      "kind": "spot"
+    },
+    "lumbridge-castle": {
+      "x": 3222,
+      "z": 3218,
+      "kind": "spot"
+    },
+    "lumbridge-trees": {
+      "x": 3195,
+      "z": 3220,
+      "kind": "spot"
+    },
+    "varrock-oaks": {
+      "x": 3190,
+      "z": 3458,
+      "kind": "spot"
+    },
+    "falador-centre": {
+      "x": 2951,
+      "z": 3380,
+      "kind": "spot"
+    },
+    "lumbridge-general-store": {
+      "x": 3212,
+      "z": 3247,
+      "kind": "shop"
+    },
+    "lumbridge-axe-shop": {
+      "x": 3232,
+      "z": 3203,
+      "kind": "shop"
+    },
+    "al-kharid-furnace": {
+      "x": 3273,
+      "z": 3184,
+      "kind": "spot",
+      "area": "alkharid"
+    },
+    "al-kharid-scimitar-shop": {
+      "x": 3287,
+      "z": 3186,
+      "kind": "shop",
+      "area": "alkharid"
+    },
+    "port-sarim-dock": {
+      "x": 3027,
+      "z": 3218,
+      "kind": "dock"
+    },
+    "karamja-dock": {
+      "x": 2953,
+      "z": 3147,
+      "kind": "dock"
+    },
+    "brimhaven-dock": {
+      "x": 2772,
+      "z": 3225,
+      "kind": "dock"
+    },
+    "ardougne-dock": {
+      "x": 2679,
+      "z": 3275,
+      "kind": "dock"
+    },
+    "ardougne-market": {
+      "x": 2660,
+      "z": 3314,
+      "kind": "spot"
+    },
+    "falador-north-gate": {
+      "x": 2935,
+      "z": 3460,
+      "kind": "spot"
+    },
+    "taverley-stone-circle": {
+      "x": 2935,
+      "z": 3479,
+      "kind": "spot"
+    },
+    "seers-flax-field": {
+      "x": 2738,
+      "z": 3442,
+      "kind": "spot"
+    },
+    "seers-spinning-wheel": {
+      "x": 2711,
+      "z": 3471,
+      "kind": "spot"
+    },
+    "mining-guild": {
+      "x": 3020,
+      "z": 3330,
+      "kind": "spot"
+    },
+    "lumbridge-cow-field": {
+      "x": 3253,
+      "z": 3290,
+      "kind": "spot"
+    },
+    "lumbridge-cow-pen-gate": {
+      "x": 3241,
+      "z": 3301,
+      "kind": "spot"
+    },
+    "varrock-se-mine": {
+      "x": 3285,
+      "z": 3365,
+      "kind": "spot"
+    },
+    "draynor-village": {
+      "x": 3095,
+      "z": 3240,
+      "kind": "spot"
+    },
+    "barbarian-village": {
+      "x": 2530,
+      "z": 3570,
+      "kind": "spot"
+    },
+    "catherby": {
+      "x": 2700,
+      "z": 3400,
+      "kind": "spot"
+    },
+    "fishing-guild": {
+      "x": 2680,
+      "z": 3350,
+      "kind": "spot"
+    },
+    "seers-village-centre": {
+      "x": 2720,
+      "z": 3480,
+      "kind": "spot"
+    },
+    "taverley-courtyard": {
+      "x": 2930,
+      "z": 3490,
+      "kind": "spot"
+    },
+    "draynor-manor": {
+      "x": 3100,
+      "z": 3205,
+      "kind": "spot"
+    },
+    "lumbridge-chicken-pen": {
+      "x": 3215,
+      "z": 3285,
+      "kind": "spot"
+    },
+    "varrock-centre": {
+      "x": 3210,
+      "z": 3425,
+      "kind": "spot"
+    },
+    "seers-bank-spinning-wheel-ladder": {
+      "x": 2715,
+      "z": 3470,
+      "kind": "spot"
+    },
+    "falador-east-bank": {
+      "x": 3015,
+      "z": 3355,
+      "kind": "bank",
+      "zone": [
+        3009,
+        3353,
+        3021,
+        3358
+      ]
+    },
+    "falador-west-bank": {
+      "x": 2948,
+      "z": 3368,
+      "kind": "bank"
+    },
+    "port-sarim-fishing-spots": {
+      "x": 3035,
+      "z": 3200,
+      "kind": "spot"
+    },
+    "karamja-glory-spot": {
+      "x": 2965,
+      "z": 3165,
+      "kind": "spot"
+    },
+    "al-kharid-mine": {
+      "x": 3270,
+      "z": 3145,
+      "kind": "spot",
+      "area": "alkharid"
+    },
+    "lumbridge-chest-area": {
+      "x": 3230,
+      "z": 3205,
+      "kind": "spot"
+    },
+    "edgeville-bank": {
+      "x": 3095,
+      "z": 3495,
+      "kind": "bank"
+    },
+    "lumbridge-church": {
+      "x": 3244,
+      "z": 3206,
+      "kind": "spot"
+    },
+    "urhney-hut": {
+      "x": 3235,
+      "z": 3153,
+      "kind": "spot"
+    },
+    "lumbridge-graveyard": {
+      "x": 3249,
+      "z": 3194,
+      "kind": "spot"
+    },
+    "wizards-tower": {
+      "x": 3104,
+      "z": 3165,
+      "kind": "spot"
+    },
+    "lumbridge-goblins": {
+      "x": 3143,
+      "z": 3230,
+      "kind": "spot"
+    },
+    "onion-field": {
+      "x": 3189,
+      "z": 3267,
+      "kind": "spot"
+    },
+    "draynor-aggie": {
+      "x": 3086,
+      "z": 3259,
+      "kind": "spot"
+    },
+    "port-sarim-bartender": {
+      "x": 3045,
+      "z": 3257,
+      "kind": "spot"
+    },
+    "goblin-village": {
+      "x": 2957,
+      "z": 3511,
+      "kind": "spot"
+    },
+    "falador-furnace": {
+      "x": 2975,
+      "z": 3366,
+      "kind": "spot"
+    },
+    "varrock-anvil": {
+      "x": 3190,
+      "z": 3424,
+      "kind": "spot"
+    },
+    "varrock-aubury": {
+      "x": 3253,
+      "z": 3402,
+      "kind": "spot"
+    },
+    "al-kharid-hassan": {
+      "x": 3302,
+      "z": 3163,
+      "kind": "spot"
+    },
+    "al-kharid-osman": {
+      "x": 3286,
+      "z": 3180,
+      "kind": "spot"
+    },
+    "draynor-leela": {
+      "x": 3113,
+      "z": 3263,
+      "kind": "spot"
+    },
+    "draynor-jail": {
+      "x": 3125,
+      "z": 3245,
+      "kind": "spot"
+    },
+    "dwarf-commander": {
+      "x": 2571,
+      "z": 3463,
+      "kind": "spot"
+    },
+    "dwarf-railings": {
+      "x": 2564,
+      "z": 3466,
+      "kind": "spot"
+    },
+    "dwarf-watchtower": {
+      "x": 2567,
+      "z": 3444,
+      "level": 2,
+      "kind": "spot"
+    },
+    "mcannon-cave": {
+      "x": 2622,
+      "z": 3392,
+      "kind": "spot"
+    },
+    "dwarf-cannon": {
+      "x": 2577,
+      "z": 3461,
+      "kind": "spot"
+    },
+    "nulodion": {
+      "x": 3011,
+      "z": 3453,
+      "kind": "spot"
+    },
+    "varrock-east-bank": {
+      "x": 3253,
+      "z": 3421,
+      "kind": "bank",
+      "zone": [
+        3250,
+        3416,
+        3257,
+        3427
+      ]
+    },
+    "ardougne-west-bank": {
+      "x": 2616,
+      "z": 3332,
+      "kind": "bank",
+      "zone": [
+        2612,
+        3330,
+        2621,
+        3335
+      ]
+    },
+    "ardougne-east-bank": {
+      "x": 2653,
+      "z": 3283,
+      "kind": "bank",
+      "zone": [
+        2649,
+        3280,
+        2658,
+        3287
+      ]
+    },
+    "catherby-bank": {
+      "x": 2809,
+      "z": 3441,
+      "kind": "bank",
+      "zone": [
+        2806,
+        3438,
+        2812,
+        3445
+      ]
+    },
+    "yanille-bank": {
+      "x": 2612,
+      "z": 3092,
+      "kind": "bank",
+      "zone": [
+        2609,
+        3088,
+        2616,
+        3097
+      ]
+    },
+    "fishing-guild-bank": {
+      "x": 2586,
+      "z": 3420,
+      "kind": "bank",
+      "zone": [
+        2586,
+        3418,
+        2587,
+        3422
+      ]
+    },
+    "duel-arena-bank": {
+      "x": 3382,
+      "z": 3269,
+      "kind": "bank",
+      "zone": [
+        3380,
+        3267,
+        3384,
+        3271
+      ]
+    },
+    "shantay-pass-bank": {
+      "x": 3308,
+      "z": 3120,
+      "kind": "bank",
+      "zone": [
+        3308,
+        3119,
+        3309,
+        3121
+      ]
+    }
+  }
+}

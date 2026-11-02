@@ -1,0 +1,157 @@
+{
+  "model": "qwen3.5-4b",
+  "goalVersion": 1,
+  "runs": 1,
+  "goal": "Kill a cow, then pick up its cowhide and bones. Cows are the npcs named Cow.",
+  "summary": {
+    "cases": 9,
+    "runs": 9,
+    "pass": 7,
+    "wrong": 2,
+    "invalid": 0,
+    "passRate": 0.7777777777777778
+  },
+  "results": [
+    {
+      "id": "fresh_start",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 625
+        }
+      ]
+    },
+    {
+      "id": "mid_fight_wait",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 223
+        }
+      ]
+    },
+    {
+      "id": "loot_after_kill_lingering_combat",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 249
+        }
+      ]
+    },
+    {
+      "id": "loot_visible_idle",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 241
+        }
+      ]
+    },
+    {
+      "id": "bones_taken_hide_still_on_ground",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 227
+        }
+      ]
+    },
+    {
+      "id": "goal_complete",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 233
+        }
+      ]
+    },
+    {
+      "id": "busy_cow_nearest",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 216
+        }
+      ]
+    },
+    {
+      "id": "no_cow_nearby",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 201
+        }
+      ]
+    },
+    {
+      "id": "retry_after_target_lost",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 234
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "calls": 9,
+    "promptTokens": 3918,
+    "completionTokens": 94,
+    "totalLatencyMs": 2448
+  }
+}

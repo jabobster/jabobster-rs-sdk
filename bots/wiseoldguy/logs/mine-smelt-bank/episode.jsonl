@@ -1,0 +1,2 @@
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-11-01T17-28-53Z-25de","stopReason":"mine_blocked","detail":"a dialog is open","steps":2,"copperMined":0,"tinMined":0,"barsSmelted":0,"barsDeposited":0,"ticks":213}
+{"schemaVersion":1,"kind":"routine_end","runId":"2026-11-01T17-44-11Z-ba8a","stopReason":"smelt_blocked","detail":"a dialog is open","steps":25,"copperMined":10,"tinMined":10,"barsSmelted":0,"barsDeposited":0,"ticks":744}

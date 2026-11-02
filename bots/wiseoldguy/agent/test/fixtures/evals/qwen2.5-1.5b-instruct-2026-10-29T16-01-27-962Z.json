@@ -1,0 +1,157 @@
+{
+  "model": "qwen2.5-1.5b-instruct",
+  "goalVersion": 1,
+  "runs": 1,
+  "goal": "Kill a cow, then pick up its cowhide and bones. Cows are the npcs named Cow.",
+  "summary": {
+    "cases": 9,
+    "runs": 9,
+    "pass": 2,
+    "wrong": 7,
+    "invalid": 0,
+    "passRate": 0.2222222222222222
+  },
+  "results": [
+    {
+      "id": "fresh_start",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 147
+        }
+      ]
+    },
+    {
+      "id": "mid_fight_wait",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 114
+        }
+      ]
+    },
+    {
+      "id": "loot_after_kill_lingering_combat",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 104
+        }
+      ]
+    },
+    {
+      "id": "loot_visible_idle",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 104
+        }
+      ]
+    },
+    {
+      "id": "bones_taken_hide_still_on_ground",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 98
+        }
+      ]
+    },
+    {
+      "id": "goal_complete",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "wrong",
+          "detail": "attack Cow",
+          "latencyMs": 108
+        }
+      ]
+    },
+    {
+      "id": "busy_cow_nearest",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n3\"}",
+          "verdict": "wrong",
+          "detail": "attack Cow",
+          "latencyMs": 108
+        }
+      ]
+    },
+    {
+      "id": "no_cow_nearby",
+      "runs": 1,
+      "pass": 1,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":3}",
+          "verdict": "pass",
+          "detail": "wait 3",
+          "latencyMs": 87
+        }
+      ]
+    },
+    {
+      "id": "retry_after_target_lost",
+      "runs": 1,
+      "pass": 0,
+      "wrong": 1,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 105
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "calls": 9,
+    "promptTokens": 3700,
+    "completionTokens": 92,
+    "totalLatencyMs": 974
+  }
+}

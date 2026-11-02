@@ -1,0 +1,373 @@
+{
+  "model": "qwen3.5-4b",
+  "goalVersion": 1,
+  "runs": 5,
+  "goal": "Kill a cow, then pick up its cowhide and bones. Cows are the npcs named Cow.",
+  "summary": {
+    "cases": 9,
+    "runs": 45,
+    "pass": 30,
+    "wrong": 15,
+    "invalid": 0,
+    "passRate": 0.6666666666666666
+  },
+  "results": [
+    {
+      "id": "fresh_start",
+      "runs": 5,
+      "pass": 3,
+      "wrong": 2,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 684
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 168
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 182
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 170
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 181
+        }
+      ]
+    },
+    {
+      "id": "mid_fight_wait",
+      "runs": 5,
+      "pass": 5,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 253
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 173
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 197
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 199
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "pass",
+          "detail": "wait 1",
+          "latencyMs": 167
+        }
+      ]
+    },
+    {
+      "id": "loot_after_kill_lingering_combat",
+      "runs": 5,
+      "pass": 5,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 272
+        },
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 185
+        },
+        {
+          "raw": "{\n\"type\": \"pickup\",\n\"target\": \"g1\"\n}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 312
+        },
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 178
+        },
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 177
+        }
+      ]
+    },
+    {
+      "id": "loot_visible_idle",
+      "runs": 5,
+      "pass": 2,
+      "wrong": 3,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 273
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 173
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 171
+        },
+        {
+          "raw": "{\"type\":\"pickup\",\"target\":\"g1\"}",
+          "verdict": "pass",
+          "detail": "pickup Bones",
+          "latencyMs": 178
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 169
+        }
+      ]
+    },
+    {
+      "id": "bones_taken_hide_still_on_ground",
+      "runs": 5,
+      "pass": 0,
+      "wrong": 5,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 250
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 172
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 167
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 171
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "wrong",
+          "detail": "stop",
+          "latencyMs": 171
+        }
+      ]
+    },
+    {
+      "id": "goal_complete",
+      "runs": 5,
+      "pass": 5,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 260
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 166
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 169
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 174
+        },
+        {
+          "raw": "{\"type\":\"stop\",\"outcome\":\"done\"}",
+          "verdict": "pass",
+          "detail": "stop",
+          "latencyMs": 172
+        }
+      ]
+    },
+    {
+      "id": "busy_cow_nearest",
+      "runs": 5,
+      "pass": 0,
+      "wrong": 5,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 246
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 167
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 170
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 166
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":1}",
+          "verdict": "wrong",
+          "detail": "wait 1",
+          "latencyMs": 167
+        }
+      ]
+    },
+    {
+      "id": "no_cow_nearby",
+      "runs": 5,
+      "pass": 5,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 224
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 168
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 169
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 166
+        },
+        {
+          "raw": "{\"type\":\"wait\",\"ticks\":2}",
+          "verdict": "pass",
+          "detail": "wait 2",
+          "latencyMs": 170
+        }
+      ]
+    },
+    {
+      "id": "retry_after_target_lost",
+      "runs": 5,
+      "pass": 5,
+      "wrong": 0,
+      "invalid": 0,
+      "outputs": [
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 264
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 214
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 191
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 195
+        },
+        {
+          "raw": "{\"type\":\"attack\",\"target\":\"n1\"}",
+          "verdict": "pass",
+          "detail": "attack Cow",
+          "latencyMs": 197
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "calls": 45,
+    "promptTokens": 19590,
+    "completionTokens": 473,
+    "totalLatencyMs": 9204
+  }
+}
